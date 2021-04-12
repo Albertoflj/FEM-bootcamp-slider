@@ -1,0 +1,179 @@
+.container{
+    position: relative;
+    min-height: 100vh;
+    width: 80%;
+    
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 10.3125rem;
+    
+}
+.profile{
+    height: 80%;
+    align-items: center;
+    
+}
+.image{
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        height: 33.75rem;
+        img{
+            box-shadow: 0rem 2.0625rem 5rem -2.25rem rgba(0,0,0,0.75);
+        }
+        
+        
+}
+.main-text{
+   //max-width: 39.75rem;
+   width: 60%;
+   position: absolute;
+   z-index: 100;
+   p{
+       font-size: 2rem;
+       color: $darkBlue;
+   }
+   .details{
+       font-size: 1.25rem;
+       color: $grayBlue;
+       
+   }
+   p.details strong{
+       color: $darkBlue
+   }
+   
+   
+}
+.b-parent{
+        position: absolute;
+        z-index: 1000;
+        right: 0;
+        height: 33.75rem;
+        width: 33.75rem;
+        .buttons{
+            
+            z-index: 1000;
+            display: flex;
+            bottom: -5%;
+            left: 10%;
+            overflow: hidden;
+            button{
+                border: none;
+                background-color: transparent;
+                img{
+                    height: 1.125rem;
+                }
+            }
+            button:hover{
+                cursor: pointer;
+                filter: brightness(1.5);
+                
+            }
+            button:disabled{
+                cursor: not-allowed;
+            }
+            .previous{
+                width: 50%;
+                border-top-left-radius: 3.125rem;
+                border-bottom-left-radius: 3.125rem;
+            }
+            .next{
+                width: 50%;
+            }
+        }
+}
+
+.buttons{
+    background-color: white;
+    height: 3.5rem;
+    width: 7rem;
+    border-radius: 3.125rem;
+    position: absolute;
+    bottom: 13%;
+    right: 33%;
+ .next{
+     img{
+         height: 1.125rem;
+     }
+ }
+
+}
+
+@include breakpoint-down(medium){
+    .main-text{
+        p{
+            font-size: 1.5625rem;
+        }
+    }
+}
+@include breakpoint-down(medium-s){
+    body{
+        //background-image: url('../images/pattern-bg.svg'), url('../images/pattern-curve.svg'), url('../images/pattern-quotes.svg');
+        background-position: top 4.5% center, bottom left, center top 40%;
+        background-size: 20rem, 31.25rem, 6.25rem;
+    }
+    .container{
+        text-align: center;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+    }
+    .profile{
+        margin-top: 3.375rem;
+        flex-direction: column;
+
+    }
+    .main-text{
+        position: relative;
+        width: fit-content;
+        p{
+            font-size: 1.875rem;
+        }
+        justify-self: flex-start;
+        margin: 0 2.1875rem;
+        margin-top: 5rem;
+        max-width: 31.25rem;
+    }
+    .b-parent{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 7%;
+        left: 0;
+        right: 0;
+        height: 15.8125rem;
+        width: 15.8125rem;
+        .buttons{
+            
+            bottom: -10%;
+            left: 29%;
+            
+            overflow: hidden;
+            
+            .previous{
+                width: 50%;
+            }
+            .next{
+                width: 50%;
+            }
+
+        }
+    }
+    .image{
+        position: relative;
+        height: 15.8125rem;
+        img{
+            height: 15.8125rem;
+        }
+        box-shadow: 0rem 2.0625rem 5rem -2.25rem rgba(0,0,0,0.75);
+        
+}
+}
+@include breakpoint-down(s-small){
+    .main-text{
+        p{
+            font-size: 1.25rem;
+        }
+    }
+}

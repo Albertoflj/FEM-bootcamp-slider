@@ -1,0 +1,225 @@
+body {
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/pattern-bg.svg"), url("../images/pattern-curve.svg"), url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 10%, bottom left, bottom 70% left 20%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.active {
+  display: inherit;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 80%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0rem 10.3125rem;
+}
+
+.profile {
+  height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  height: 33.75rem;
+}
+
+.image img {
+  -webkit-box-shadow: 0rem 2.0625rem 5rem -2.25rem rgba(0, 0, 0, 0.75);
+          box-shadow: 0rem 2.0625rem 5rem -2.25rem rgba(0, 0, 0, 0.75);
+}
+
+.main-text {
+  width: 60%;
+  position: absolute;
+  z-index: 100;
+}
+
+.main-text p {
+  font-size: 2rem;
+  color: #202046;
+}
+
+.main-text .details {
+  font-size: 1.25rem;
+  color: #babacf;
+}
+
+.main-text p.details strong {
+  color: #202046;
+}
+
+.b-parent {
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  height: 33.75rem;
+  width: 33.75rem;
+}
+
+.b-parent .buttons {
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -5%;
+  left: 10%;
+  overflow: hidden;
+}
+
+.b-parent .buttons button {
+  border: none;
+  background-color: transparent;
+}
+
+.b-parent .buttons button img {
+  height: 1.125rem;
+}
+
+.b-parent .buttons button:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+
+.b-parent .buttons button:disabled {
+  cursor: not-allowed;
+}
+
+.b-parent .buttons .previous {
+  width: 50%;
+  border-top-left-radius: 3.125rem;
+  border-bottom-left-radius: 3.125rem;
+}
+
+.b-parent .buttons .next {
+  width: 50%;
+}
+
+.buttons {
+  background-color: white;
+  height: 3.5rem;
+  width: 7rem;
+  border-radius: 3.125rem;
+  position: absolute;
+  bottom: 13%;
+  right: 33%;
+}
+
+.buttons .next img {
+  height: 1.125rem;
+}
+
+@media (max-width: 76.25rem) {
+  .main-text p {
+    font-size: 1.5625rem;
+  }
+}
+
+@media (max-width: 70.625rem) {
+  body {
+    background-position: top 4.5% center, bottom left, center top 40%;
+    background-size: 20rem, 31.25rem, 6.25rem;
+  }
+  .container {
+    text-align: center;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .profile {
+    margin-top: 3.375rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    justify-self: flex-start;
+    margin: 0 2.1875rem;
+    margin-top: 5rem;
+    max-width: 31.25rem;
+  }
+  .main-text p {
+    font-size: 1.875rem;
+  }
+  .b-parent {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 7%;
+    left: 0;
+    right: 0;
+    height: 15.8125rem;
+    width: 15.8125rem;
+  }
+  .b-parent .buttons {
+    bottom: -10%;
+    left: 29%;
+    overflow: hidden;
+  }
+  .b-parent .buttons .previous {
+    width: 50%;
+  }
+  .b-parent .buttons .next {
+    width: 50%;
+  }
+  .image {
+    position: relative;
+    height: 15.8125rem;
+    -webkit-box-shadow: 0rem 2.0625rem 5rem -2.25rem rgba(0, 0, 0, 0.75);
+            box-shadow: 0rem 2.0625rem 5rem -2.25rem rgba(0, 0, 0, 0.75);
+  }
+  .image img {
+    height: 15.8125rem;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  .main-text p {
+    font-size: 1.25rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

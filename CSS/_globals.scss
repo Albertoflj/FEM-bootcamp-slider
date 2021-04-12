@@ -1,0 +1,25 @@
+body{
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/pattern-bg.svg'), url('../images/pattern-curve.svg'), url('../images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: top 50% right 10%, bottom left, bottom 70% left 20%;
+    
+}
+.flex{
+    display: flex;
+}
+
+.none{
+    display: none;
+    
+    
+}
+.active{
+    display: inherit;
+}
